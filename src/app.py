@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.debug = False
 
 # Routes to the html files
-app.register_blueprint(s2sRoute, url_prefix='/cybsec')
+app.register_blueprint(s2sRoute, url_prefix='/s2s')
 
 if __name__ == "__main__":
     from waitress import serve
