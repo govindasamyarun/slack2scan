@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  slack2scan:
+    container_name: slack2scan
+    hostname: slack2scan
+    environment:
+      SLACK_SIGNING_SECRET: abc
+      S2S_HOST_NAME: xyz.test.com
+    build:
+      context: ../slack2scan
+      dockerfile: Dockerfile
+    ports:
+     - 8000:8000
+    networks:
+      customnetwork:
+        ipv4_address: 172.24.0.2
+
+networks:
+  customnetwork:
+    ipam:
+     config:
+       - subnet: 172.24.0.0/16
