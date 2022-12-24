@@ -2,11 +2,13 @@
 
 ## About The Project
 
-The Slack2scan application will make the security testing process easier and help increase security adoption. 
+The Slack2scan application scans the GitHub repository for hardcoded secrets using Gitleaks. It will make security testing easier and help increase security adoption. Not limited to hardcoded secrets, it can be extended to perform SAST & DAST scans. 
 
-It abstracts away the complexity and provides a simple command to run security scans using Slack. Results get published to the same slack channel. 
+Abstracts away the complexity and provides a simple command to run security scans using Slack. The results get published to the same slack channel. Developers can perform the scan independently, eliminating the dependency on DevOps and AppSec teams. 
 
-The application is written in Python Flask. The modular code makes it easier to write a library for any new security tools. 
+The application is written in Python Flask. And it is easier to add a library for any new security tools. 
+
+<img width="1167" alt="Screenshot 2022-12-24 at 1 06 39 PM" src="https://user-images.githubusercontent.com/69586504/209426225-1e1ffa1e-cb17-44bb-9ae3-9c144321bcd4.png">
 
 ## Getting started
 
@@ -81,6 +83,10 @@ The application is written in Python Flask. The modular code makes it easier to
    
    docker-compose up --detach
    ```
+
+## Demo
+
+https://user-images.githubusercontent.com/69586504/209426286-25068277-ee3e-432a-a5e2-43eafa8bca50.mov
 
 ## Support
 
